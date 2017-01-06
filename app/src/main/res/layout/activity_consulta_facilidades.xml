@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_consulta_facilidades"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hitss.apppicmovil.activitys.ConsultaFacilidadesActivity">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:padding="@dimen/padding_img_icon"
+                    android:src="@drawable/input_division" />
+
+                <Spinner
+                    android:id="@+id/spinner_division"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/borde_general_blanco"
+                    android:entries="@array/division"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_margin_top">
+
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:padding="@dimen/padding_img_icon"
+                    android:src="@drawable/input_area" />
+
+                <Spinner
+                    android:id="@+id/spinner_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/borde_general_blanco"
+                    android:entries="@array/area"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_margin_top">
+
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:padding="@dimen/padding_img_icon"
+                    android:src="@drawable/input_cope" />
+
+                <Spinner
+                    android:id="@+id/spinner_cope"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/borde_general_blanco"
+                    android:entries="@array/cope"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_margin_top">
+
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:padding="@dimen/padding_img_icon"
+                    android:src="@drawable/input_tecnico" />
+
+                <EditText
+                    android:id="@+id/edt_tecnico"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/borde_general_blanco"
+                    android:hint="*TÉCNICO (NOMBRE)"
+                    android:paddingLeft="@dimen/padding_edit_text_hint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_margin_top">
+
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:padding="@dimen/padding_img_icon"
+                    android:src="@drawable/input_telefono" />
+
+                <EditText
+                    android:id="@+id/edt_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/borde_general_blanco"
+                    android:hint="*TELÉFONO"
+                    android:paddingLeft="@dimen/padding_edit_text_hint"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_margin_top">
+
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:padding="@dimen/padding_img_icon"
+                    android:src="@drawable/input_telefono" />
+
+                <EditText
+                    android:id="@+id/edt_confirmacion_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/borde_general_blanco"
+                    android:hint="*CONFIRMACIÓN TELÉFONO"
+                    android:paddingLeft="@dimen/padding_edit_text_hint"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/general_width"
+                    android:layout_weight="80"
+                    android:background="@drawable/captcha"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_refresh"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/cargando"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:src="@drawable/input_texto_de_seguridad"
+                    android:padding="@dimen/padding_img_icon"/>
+                <EditText
+                    android:id="@+id/edt_captcha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:paddingLeft="@dimen/padding_edit_text_hint"
+                    android:background="@drawable/borde_general_blanco"
+                    android:hint="*TEXTO DE SEGURIDAD"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/general_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/general_width"
+                    android:layout_height="@dimen/general_height"
+                    android:background="@drawable/active_icon"
+                    android:src="@drawable/input_terminal"
+                    android:padding="@dimen/padding_img_icon"/>
+                <EditText
+                    android:id="@+id/edt_terminal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_height"
+                    android:paddingLeft="@dimen/padding_edit_text_hint"
+                    android:background="@drawable/borde_general_blanco"
+                    android:hint="TERMINAL"></EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_buscar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/general_margin_top"
+                android:background="@drawable/btn_general_selector"
+                android:text="Buscar"
+                android:elevation="5dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

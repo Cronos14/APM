@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.hitss.apppicmovil.activitys.LoginActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/img_fibra"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+
+            android:background="@drawable/home_fibra" />
+
+        <ImageView
+            android:id="@+id/img_cobre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="40"
+            android:background="@drawable/home_cobre" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="13"
+                android:background="@drawable/btn_general_selector"
+                android:text="Check-in"
+                android:textAllCaps="true" />
+
+    </LinearLayout>
+</LinearLayout>

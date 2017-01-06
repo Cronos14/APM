@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_genera_os"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.hitss.apppicmovil.activitys.GeneraOSActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_genera_os"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="47">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/general_margin_top"
+            android:weightSum="100"
+            android:background="@drawable/borde_general_blanco">
+
+            <ImageView
+                android:id="@+id/img_cable"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/general_height"
+                android:background="@drawable/disable_icon"
+                android:padding="@dimen/padding_img_icon"
+                android:src="@drawable/input_cable"
+                android:layout_weight="15"/>
+
+            <EditText
+                android:id="@+id/edt_cable"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/general_height"
+                android:hint="CABLE"
+                android:layout_weight="72"
+                android:enabled="false"
+                android:background="@color/gris_custom"
+                android:paddingLeft="@dimen/padding_edit_text_hint"></EditText>
+            <ImageView
+                android:id="@+id/img_check_cable"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/general_height"
+                android:src="@drawable/circulo_sombra"
+                android:layout_weight="13"/>
+        </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/btn_generar_os"
+                android:layout_marginTop="@dimen/general_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_height"
+                android:text="generar OS"
+                android:background="@drawable/btn_general_selector"/>
+
+            <Button
+                android:id="@+id/btn_reiniciar"
+                android:layout_marginTop="@dimen/general_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_height"
+                android:text="reiniciar"
+                android:background="@drawable/btn_general_selector"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

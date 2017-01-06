@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/imageView_element"
+        android:layout_width="@dimen/tab_menu_icon_size"
+        android:layout_height="@dimen/tab_menu_icon_size"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/menu_ts_sitio_active"/>
+    <TextView
+        android:id="@+id/textView_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plataformas"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/tab_menu_text_size"
+        android:textAllCaps="true"/>
+
+
+
+</LinearLayout>

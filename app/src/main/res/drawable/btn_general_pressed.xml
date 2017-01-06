@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:bottom="4dp"
+        android:left="@dimen/padding_btn_general"
+        android:right="@dimen/padding_btn_general"
+        android:top="@dimen/padding_btn_general">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="4dp"
+                android:color="#C79600" />
+
+            <gradient
+                android:startColor="#a19035"
+                android:endColor="#f7df02"
+                android:angle="270"
+                android:type="linear"/>
+
+            <padding
+                android:bottom="4dp"/>
+
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099cc</color>
+    <color name="colorPrimaryDark">#0075d6</color>
+    <color name="colorAccent">#eeeeee</color>
+    <color name="colorSeparado">#019BDB</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#ffffff</color>
+    <color name="azulclaro">#FF0099CC</color>
+    <color name="gris">#eeeeee</color>
+    <color name="grisFuerte">#949292</color>
+    <color name="colorBoton">#019BDB</color>
+    <color name="negro_custom">#1A1A1A</color>
+    <color name="gris_custom">#DADADA</color>
+</resources>
