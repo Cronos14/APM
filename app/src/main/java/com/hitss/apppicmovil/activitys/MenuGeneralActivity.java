@@ -9,7 +9,6 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -20,7 +19,6 @@ import com.hitss.apppicmovil.models.ElementMenu;
 import com.hitss.apppicmovil.models.ElementTabMenu;
 import com.hitss.apppicmovil.utils.Utils;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class MenuGeneralActivity extends GeneralActivity {
@@ -213,28 +211,7 @@ public class MenuGeneralActivity extends GeneralActivity {
         adapterMenu.notifyDataSetChanged();
     }
 
-    private Bitmap searchBitmap(String nombre){
 
-        try {
-            Log.e("AppActivity","buscando caracteristica: "+nombre);
-            return BitmapFactory.decodeStream(getAssets().open("iconos_caracteristicas/"+nombre+".png"));
-        } catch (IOException e) {
-            return null;
-        }
-    }
-
-
-
-    private ElementTabMenu addElementTabMenu(ElementTabMenu elementTabMenu){
-
-        ElementTabMenu element = new ElementTabMenu();
-        element.setFondo(getResources().getDrawable(R.drawable.circle_general));
-        element.setIconActive(searchBitmap(elementTabMenu.getNombreIcono()));
-        element.setNombre(elementTabMenu.getNombre());
-
-        return element;
-
-    }
 
     private ElementTabMenu addElementTabMenu(String nombre, int drawableActive, int drawableInactive){
 
